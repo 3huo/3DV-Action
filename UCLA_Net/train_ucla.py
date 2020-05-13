@@ -36,8 +36,8 @@ def main(args=None):
 	parser.add_argument('--momentum', type=float, default=0.9, help='momentum (SGD only)')
 	parser.add_argument('--workers', type=int, default=0, help='number of data loading workers')
 
-	parser.add_argument('--root_path', type=str, default='/data/data3/wangyancheng/3DV_construction/UCLA_point/UCLA_vsize40_feature_2048_ff_rawdi_2',  help='preprocess folder')
-	parser.add_argument('--depth_path', type=str, default='/data/data3/wangyancheng/3DV_construction/UCLA_point/UCLA_bboxed_2048',  help='raw_depth_png')
+	parser.add_argument('--root_path', type=str, default='/UCLA_point/UCLA_vsize40_feature_2048_ff_rawdi_2',  help='preprocess folder')# 3DV points path
+	parser.add_argument('--depth_path', type=str, default='3DV_construction/UCLA_point/UCLA_bboxed_2048',  help='raw_depth_png')# appearance points path
 	parser.add_argument('--save_root_dir', type=str, default='results_ucla/UCLA_v40_MultiStream_rawdi2',  help='output folder')
 	parser.add_argument('--model', type=str, default = '',  help='model name for training resume')
 	parser.add_argument('--optimizer', type=str, default = '',  help='optimizer name for training resume')
