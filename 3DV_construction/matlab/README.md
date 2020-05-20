@@ -3,4 +3,6 @@ the "get_raw_dynamic_voxel.m" is the function RankSVM solution method for voxel 
 
 The "..._fulldepth.m" is use the full depth for 3DV construction. the results comparison is shown in our paper.
 
+The python version for 3DV construction is also released.
+
 The data path should be set properly, if you use this code.
