@@ -118,7 +118,8 @@ def main():
 					# #V_i version2：ith voxel
 					for m in range(M):
 						## first segment 3dv construction: all frame voxel is used!   motion:(m_g) 
-						voxel_DI[4,:,:,:] = voxel_DI[4,:,:,:] + (i_frame*2-n_frame+1)*threeD_matrix
+						if m == 0:
+							voxel_DI[0,:,:,:] = voxel_DI[0,:,:,:] + (i_frame*2-n_frame+1)*threeD_matrix
 						## T_1=M-1 segments 3dv construction: M-1 temporal splits with 0.5 overlap
 						if m == 1 and i_frame<round(n_frame*2/5):
 							idx_f = i_frame
