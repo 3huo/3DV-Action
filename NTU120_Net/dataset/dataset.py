@@ -50,7 +50,7 @@ class NTU_RGBD(Dataset):
 		#print(self.point_vids)
 		self.TRAIN_IDS = TRAIN_IDS
 		if opt.dataset == 'ntu60':
-			indx = self.point_vids.index('S016C003P040R002A060_xyzC.mat')#('S005C003P013R001A031_xyzC.mat')#('S016C003P040R002A060_xyzC.mat')#('S016C003P040R002A060.npy')
+			indx = self.point_vids.index('S017C003P020R002A060_xyzC.mat')#('S016C003P040R002A060_xyzC.mat')#('S017C003P020R002A060.npy')
 			self.point_vids = self.point_vids[0:indx]
 			self.TRAIN_IDS = TRAIN_IDS_60
 
