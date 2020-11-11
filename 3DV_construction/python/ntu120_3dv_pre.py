@@ -144,7 +144,7 @@ def main():
 				xyz = np.column_stack((xx,yy,zz))
 				xyz = np.unique(xyz, axis = 0)
 				motion = voxel_DI[:, xyz[:,0], xyz[:,1], xyz[:,2]]
-				points_xyzc = np.concatenate((xyz,cc.T), axis = 1)  #final 3DV point feature shape N*(x,y,z,m_g,m_1,...m_t)
+				points_xyzc = np.concatenate((xyz,motion.T), axis = 1)  #final 3DV point feature shape N*(x,y,z,m_g,m_1,...m_t)
 
 				### Sample and normalization
 				if len(xx)< SAMPLE_NUM:
